@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+    background: url("https://wallpaperboat.com/wp-content/uploads/2020/07/13/50145/tokyo-01.jpg");
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.all-imgs {
+  display: flex;
+  flex-direction: column;
+}
+
+.all-imgs img {
+  height: 20vh;
+  width: 200px;
+  object-fit:fill;
+  cursor: pointer;
+}
+
+.preview-img {
+  height: 100vh;
+}
+
+.current-img {
+  height: 100vh;
+  width: 50vw;
+  object-fit: cover;
+}
+
+.animate-imgs {
+  opacity: 0.3;
+  animation: animate-imgs 0.4s ease forwards;
+}
+
+@keyframes {
+  100% {
+    opacity: 1;
+  }
+}
